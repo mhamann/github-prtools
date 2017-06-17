@@ -1,0 +1,34 @@
+{
+  "name": "github-prtools",
+  "version": "1.0.0",
+  "description": "A suite of tools for automating common GitHub flows",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/mhamann/github-prtools"
+  },
+  "keywords": [
+    "github",
+    "pull",
+    "request",
+    "automation"
+  ],
+  "author": "Matt Hamann <matthew.hamann@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "bunyan": "^1.8.10",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "nconf": "^0.8.4",
+    "nodegit": "^0.18.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "rimraf": "^2.6.1"
+  }
+}
