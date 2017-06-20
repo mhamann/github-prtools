@@ -8,7 +8,7 @@ if (nconf.get('auth:secret') !== null) {
   router.use('/v1/events', function(req, res, next) {
     let signature = req.get('X-Hub-Signature').split('=');
     let hash = crypto.createHmac(signature[0], nconf.get('auth:secret')).update(JSON.stringify(req.body)).digest('hex');
-    console.log(hash);
+
     if (hash !== signature[1]) {
       let err = new Error('Signature mismatch');
       err.statusCode = 400;
